@@ -1,0 +1,10 @@
+name: Twigified
+type: theme
+description: 'First Drupal 8 Twig theme ever created <em>beware</em>.'
+package: Twigified
+version: 8.x-1.0-alpha1
+'base theme': stark
+core: 8.x
+stylesheets:
+  all:
+    - css/twig.css
