@@ -118,11 +118,9 @@
 
     <div id="content" class="column">
       {% if page.highlighted %}<div id="highlighted">{{ page.highlighted }}</div>{% endif %}
-      {% block title %}
-        {{ title_prefix }}
-        {% if title %}<h1 class="title" id="page-title">{{ title }}</h1>{% endif %}
-        {{ title_suffix }}
-      {% endblock %}
+      {{ title_prefix }}
+      {% if title %}<h1 class="title" id="page-title">{{ title }}</h1>{% endif %}
+      {{ title_suffix }}
       {% if tabs %}<div class="tabs">{{ tabs }}</div>{% endif %}
       {{ page.help }}
       {% if action_links %}<ul class="action-links">{{ action_links }}</ul>{% endif %}
