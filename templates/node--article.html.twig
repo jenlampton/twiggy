@@ -81,13 +81,9 @@
  *
  * @ingroup themeable
  */
- {% set vars = _context|keys %}
- <pre>{{ dump(vars) }}</pre>
 
- {% macro dump_vars %}
-   {% set vars = _context|keys %}
-   <pre>{{ dump(vars) }}</pre>
- {% endmacro %}
+{% set vars = _context|keys %}
+<pre>{{ dump(vars) }}</pre>
 #}
 <article id="node-{{ node.nid }}" class="clearfix {{ attributes.class }}"{{ attributes }}>
 
