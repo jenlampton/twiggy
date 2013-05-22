@@ -89,7 +89,6 @@
    <pre>{{ dump(vars) }}</pre>
  {% endmacro %}
 #}
-{{ dump_vars }}
 <article id="node-{{ node.nid }}" class="clearfix {{ attributes.class }}"{{ attributes }}>
 
   {{ title_prefix }}
@@ -99,10 +98,7 @@
   {{ title_suffix }}
 
   <div class="infobar">
-    <figure>
-      {{ content.field_image }}
-    </figure>
-    <figcaption>photo credit: {{ name }}</figcaption>
+    {{ content.field_image }}
   </div>
 
   {% if display_submitted %}
