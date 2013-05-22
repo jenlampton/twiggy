@@ -18,7 +18,7 @@ html {
 }
 
 #header {
-  background: transparent url(http://twig.sensiolabs.org/images/background.png) repeat-x;
+  background: transparent url('../images/background.png') repeat-x;
   height: 357px;
   position: relative;
 }
@@ -97,6 +97,9 @@ html {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+}
+.infobar-inner {
+  text-align: center;
 }
 
 .infobar figcaption {
