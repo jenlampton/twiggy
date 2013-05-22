@@ -102,8 +102,13 @@ html {
   text-align: center;
 }
 
+.infobar section {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
 .infobar figcaption {
   text-align: center;
+  color: #626262;
 }
 
 #footer {

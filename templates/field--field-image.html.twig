@@ -29,6 +29,21 @@
  *
  * @ingroup themeable
  */
+ 
+ <section>
+
+   <figure>
+     <img>
+     <figcaption>caption</figcaption>
+   </figure>
+
+   <figure>
+     <img>
+     <figcaption>caption</figcaption>
+   </figure>
+
+ </section>
+ 
 #}
 {% if not label_hidden %}
 <div{{ title_attributes }}>{{ label }}:&nbsp;</div>
@@ -41,9 +56,11 @@
   {% for delta, item in items %}
     <figure{{ item_attributes[delta] }}>
       {{ item }}
+      <figcaption>caption</figcaption>
     </figure>
   {% endfor %}
 
 {% if items|length > 1 %}
 </section>
 {% endif %}
+
