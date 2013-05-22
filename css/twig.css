@@ -3,3 +3,25 @@
  * Style sheet for Drupal 8 twig theme
  */
 
+.btn {
+  background-color: #006f9f;
+  color: #fff;
+}
+
+.infobar {
+  float: right;
+  font-size: 0.9em;
+  margin: 15px;
+  width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.infobar figcaption {
+  text-align: center;
+}
