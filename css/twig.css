@@ -18,7 +18,7 @@ html {
 }
 
 #header {
-  _background: transparent url(http://twig.sensiolabs.org/images/background.png) repeat-x;
+  background: transparent url(http://twig.sensiolabs.org/images/background.png) repeat-x;
   height: 357px;
   position: relative;
 }
@@ -59,25 +59,25 @@ html {
   clear: none;
 }
 
-nav[role="navigation"] {
-  padding: 35px 200px;
+#page nav[role="navigation"] {
+  padding: 35px 100px;
   position: relative;
   top: -100px;
   font-family: Arial, sans-serif;
 }
-nav ul li {
+#page nav ul li {
   color: #ffffff;
   font-size: 1.125em;
   display: inline;
   padding-right: 30px;
 }
-nav ul li a {
+#page nav ul li a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 }
-nav ul li a:active,
-nav ul li a.active {
+#page nav ul li a:active,
+#page nav ul li a.active {
   color: #444;
 }
 
