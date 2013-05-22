@@ -81,6 +81,8 @@
  *
  * @ingroup themeable
  */
+ {% set vars = _context|keys %}
+ <pre>{{ dump(vars) }}</pre>
 #}
 <article id="node-{{ node.nid }}" class="clearfix {{ attributes.class }}"{{ attributes }}>
 
@@ -110,7 +112,6 @@
     {% hide(content.links) %}
     {{ content }}
   </div>
-
   <div class="clearfix"></div>
 
   {{ content.links }}
