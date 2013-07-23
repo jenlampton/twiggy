@@ -1,7 +1,7 @@
 name: Twiggy
 type: theme
 description: 'First Drupal 8 Twig theme ever created <em>beware</em>.'
-package: Twigified
+package: Twiggy
 version: 8.x-1.0-alpha1
 'base theme': stark
 core: 8.x
