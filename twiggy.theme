@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * hook_preprocess_page implementation.
+ *
+ */
+function twiggy_preprocess_page(&$vars) {
+ $vars['twiggy_css'] = array(
+  '#attached' => array(
+       'css' => array(
+        drupal_get_path('theme', 'twiggy') . '/css/twiggy.css' => array(),
+        drupal_get_path('theme', 'twiggy') . '/css/twiggy.no-query.css' => array(),
+        drupal_get_path('theme', 'twiggy') . '/css/twiggy.normalize.css' => array(),
+        drupal_get_path('theme', 'twiggy') . '/css/twiggy.styles.css' => array(),
+        ),
+    ),
+  );
+
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function twiggy_preprocess_field(&$vars) {
+  // If the view mode is "excerpt" use <h3> for the field labels. Otherwise use <h2>.
+  $vars['heading'] = ($vars['element']['#view_mode'] == 'excerpt') ? 'h3' : 'h2'
+  $vars['classes_array'][] = drupal_html_class('is-excerpt');
+ 
+
+}
+ 
