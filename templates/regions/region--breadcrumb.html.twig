@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Modified default theme implementation to display a region for the breadcrumb region in Sprig.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div, including:
+ *   - class: Classes that can be used to style contextually through CSS,
+ *     including:
+ *     - region: The current template type (also know as "theming hook").
+ *     - region-[name]: The name of the region with underscores replaced with
+ *       dashes. For example, page_top region would have a region-page-top
+ *       class.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content and not breadcrumb %}
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+{% endif %}
+
+{% if content and breadcrumb %}
+  <nav role="tertiary-navigation" class="menu--breadcrumb-nav">
+    {{ breadcrumb }}
+  </nav>
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+{% endif %}

@@ -1,0 +1,32 @@
+/**
+ * functions
+ */
+/**
+ * Utility Mixins
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/core_htdocs\/Drupal-core\/twig-training\/themes\/sprig\/sass\/base\/_utility\.scss}line{font-family:\000031}}
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/core_htdocs\/Drupal-core\/twig-training\/themes\/sprig\/sass\/base\/_utility\.scss}line{font-family:\000035}}
+.element-focusable {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BLadwin\/Sites\/core_htdocs\/Drupal-core\/twig-training\/themes\/sprig\/sass\/abstractions\/_mixins\.scss}line{font-family:\0000398}}
+  .element-focusable:active, .element-focusable:focus {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto; }
+
+/* No files to import found in components/**\/* */

@@ -1,10 +1,29 @@
 name: Twiggy
 type: theme
-description: 'First Drupal 8 Twig theme ever created <em>beware</em>.'
-package: Twiggy
-version: 8.x-1.0-alpha1
-'base theme': stark
+description: The first Drupal Twig theme, updated for Twig training 
+package: Contrib
+version: '8.x-9.0'
 core: 8.x
-stylesheets:
+base theme: stark
+
+regions:
+  top_bar: Top Bar
+  header: Header
+  navigation: Main Navigation
+  breadcrumb: Breadcrumb
+  highlight: Highlight
+  content: Content
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
+  help: Help
+  messages: Messages
+  page_top: Page Top
+  page_bottom: Page Bottom
+
+Stylesheets:
   all:
-    - css/twig.css
+    - css/twiggy.css
+    - css/twiggy.normalize.css
+    - css/twiggy.no-query.css
+    - css/twiggy.styles.css
